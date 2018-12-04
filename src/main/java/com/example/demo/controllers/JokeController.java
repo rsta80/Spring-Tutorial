@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.example.demo.services.JokeService;
 
@@ -22,12 +24,23 @@ public class JokeController {
 	@RequestMapping({"/",""})
 	public String showJoke(Model model) {
 		
-		model.addAttribute("joke", jokeService.getJoke());
-		
+		model.addAttribute("joke", jokeService.getJoke());		
 		return "checknorris";
 		
 	}
 	
+	@RequestMapping(value = "/profile", method = RequestMethod.GET)
+    public String processAJAXRequest() {
+
+            String response = "";
+
+            // Process the request
+            
+            // Prepare the response string
+
+            return "checknorris";
+
+        }
 	
 
 }
