@@ -29,16 +29,14 @@ public class JokeController {
 		
 	}
 	
-	@RequestMapping(value = "/profile", method = RequestMethod.GET)
-    public String processAJAXRequest() {
-
-            String response = "";
-
+	@RequestMapping(value = "/updateJoke", method = RequestMethod.GET)
+    public @ResponseBody String processAJAXRequest() {
+            
             // Process the request
             
             // Prepare the response string
 
-            return "checknorris";
+            return jokeService.getJoke();
 
         }
 	

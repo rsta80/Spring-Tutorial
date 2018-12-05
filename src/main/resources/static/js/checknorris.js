@@ -1,19 +1,18 @@
 $(document).ready(function(){
-	/*$("#newJoke").click(function(){
-		
-		alert("Todo esta bien, la alarma sonará siempre que algo no vaya bien");
+	$("#newJoke").click(function(){
+				
 		 $.ajax({
 
-             url : "/profile",             
+             url : "/updateJoke",             
              type : "GET",
 
              success : function(response) {
-                 alert( response );
+                 $("#joke").text(response);
              },
 
              error : function(xhr, status, error) {
                  alert(xhr.responseText);
              }
          });
-	});*/
+	});
 });
