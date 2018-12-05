@@ -1,0 +1,15 @@
+@charset "ISO-8859-1";
+
+.btnMoreJokes {
+	margin: 2% 10% 2% 10%;
+}
+
+.jumbotron {
+	margin-bottom: 0;
+	padding-bottom: 1rem;
+}
+
+#primary-nav {
+	background-color: #f8f9fa!important;
+	margin-bottom: 2rem;
+}
